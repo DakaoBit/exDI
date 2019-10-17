@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace ex01
 {
@@ -12,7 +13,7 @@ namespace ex01
         {
             var demo = new ex01.MainApp();
             //demo.Login("nick", "1234", "EmailService");
-            demo.Login("michael", "1234", "SMSService");
+            demo.Login("michael", "1234", ConfigurationManager.AppSettings["MessageServiceType"]);
         }
     }
 }
