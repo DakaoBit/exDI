@@ -16,6 +16,10 @@ namespace Ch02.Decorator
             logger = log;
         }
 
+        /// <summary>
+        /// 用 DecoratedLogger 加設時間
+        /// </summary>
+        /// <param name="msg"></param>
         public void Log(string msg)
         {
             logger.Log(DateTime.Now.ToString() + " - " + msg);

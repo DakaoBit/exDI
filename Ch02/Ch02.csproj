@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composite\CompositeLogger.cs" />
     <Compile Include="Decorator\DecoratedLogger.cs" />
     <Compile Include="NullObject\ConsoleLogger.cs" />
     <Compile Include="NullObject\ILogger.cs" />

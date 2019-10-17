@@ -1,5 +1,6 @@
 ﻿using Ch02.Decorator;
 using Ch02.NullObject;
+using Ch02.Composite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,18 @@ namespace Ch02
             //demo.DoSomething(log);
 
             //Decorator Pattern
-            ILogger logger = new DecoratedLogger(new ConsoleLogger());
-            logger.Log("Hello, 裝飾模式!");
+            //ILogger logger = new DecoratedLogger(new ConsoleLogger());
+            //logger.Log("Hello, 裝飾模式!");
+
+            //Composite Pattern
+            CompositeLogger com1 = new CompositeLogger("手機");
+            com1.Show();
+            com1.Log("插入時間為");
+
+
+            CompositeLogger com2 = new CompositeLogger("電腦");
+            com2.Show();
+            com2.Log("插入時間為");
         }
 
     }
