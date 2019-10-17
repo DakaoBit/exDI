@@ -10,9 +10,11 @@ namespace Ch02.NullObject
     {      
         static void Main(string[] args)
         {
-            var demo = new Ch02.NullObject.MainApp();
             //ConsoleLogger
-            demo.DoSomething("ConsoleLogger", "有訊息~");
+            ILogger log = new ConsoleLogger();
+            var demo = new Ch02.NullObject.MainApp();
+            demo.DoSomething(log);
+         
         }
     }
 }

@@ -8,27 +8,9 @@ namespace Ch02.NullObject
 {
     class MainApp
     {
-        public void DoSomething(string Type, string msg)
+        public void DoSomething(ILogger logger)
         {
-            ILogger log = null;
-
-            switch (Type)
-            {
-                case "NullLogger":
-                    log = new NullLogger();
-                    log.Log(msg);
-                    break;
-
-                case "ConsoleLogger":       
-                    log = new ConsoleLogger();
-                    log.Log(msg);
-                    break;
-
-                default:
-                    throw new ArgumentException("Unknown message service type!");
-            }
-
-           
+            logger.Log("開始執行 DoSomething 函式。");
         }
     }
 }
