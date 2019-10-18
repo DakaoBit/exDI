@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Ch02.Factory_SimpleFactory;
 
-namespace Ch02.Factory.Factory_SimpleFactory
+namespace Ch02.Factory_SimpleFactory
 {
-    class SimpleFactory
+    public class SimpleFactory
     {
         public void Order(string branch, string flavor, int quantity)
         {
