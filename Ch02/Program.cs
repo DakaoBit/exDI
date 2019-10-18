@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ch02.Factory_SimpleFactory;
+using Ch02.Factory_FactoryMethod;
 
 namespace Ch02
 {
@@ -39,10 +40,19 @@ namespace Ch02
             //logger.Log(DateTime.Now.ToString());
 
             //Factory Pattern - SimpleFactory
-            var user1 = new SimpleFactory();
-            user1.Order("NYStore", "pepperoni", 2);
-            var user2 = new SimpleFactory();
-            user2.Order("LAStore", "greek", 3);
+            //var user1 = new SimpleFactory();
+            //user1.Order("NYStore", "pepperoni", 2);
+            //var user2 = new SimpleFactory();
+            //user2.Order("LAStore", "greek", 3);
+
+            //Factory Pattern - FactoryMethod
+            PizzaStore nyStore = new Factory_FactoryMethod.NYStore();
+            var msg1 = nyStore.orderPizza(new Ch02.Factory_FactoryMethod.Pizza("NYStore", "pepperoni", 2));
+            Console.WriteLine(msg1);
+
+            PizzaStore laStore = new Factory_FactoryMethod.LAStore();
+            var msg2 = laStore.orderPizza(new Ch02.Factory_FactoryMethod.Pizza("LAStore", "cheese", 2));
+            Console.WriteLine(msg2);
         }
 
     }
