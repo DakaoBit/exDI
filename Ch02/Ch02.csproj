@@ -47,6 +47,10 @@
     <Compile Include="Adapter\ThirdPartyLogger.cs" />
     <Compile Include="Composite\CompositeLogger.cs" />
     <Compile Include="Decorator\DecoratedLogger.cs" />
+    <Compile Include="Factory_AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Factory_AbstractFactory\Color.cs" />
+    <Compile Include="Factory_AbstractFactory\FactoryProducer.cs" />
+    <Compile Include="Factory_AbstractFactory\Shape.cs" />
     <Compile Include="Factory_FactoryMethod\Pizza.cs" />
     <Compile Include="Factory_FactoryMethod\Store.cs" />
     <Compile Include="Factory_SimpleFactory\IMakePizza.cs" />

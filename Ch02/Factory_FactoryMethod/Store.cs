@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ch02.Factory_FactoryMethod
 {
+    /// <summary>
+    /// 使用抽象類別 讓父, 子類別 依賴鬆綁
+    /// </summary>
     public abstract class PizzaStore
     {
         public abstract string createPizza(Pizza pizza);
