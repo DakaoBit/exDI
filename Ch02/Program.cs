@@ -2,6 +2,7 @@
 using Ch02.NullObject;
 using Ch02.Composite;
 using Ch02.Adapter;
+using Ch02.Factory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,8 +35,14 @@ namespace Ch02
             //com2.Log("插入時間為");
 
             //Adapter Pattern
-            ILogger logger = new CommonLogger();
-            logger.Log(DateTime.Now.ToString());
+            //ILogger logger = new CommonLogger();
+            //logger.Log(DateTime.Now.ToString());
+
+            //Factory Pattern - SimpleFactory
+            var user1 = SimpleFactory.CreateAdministrator(1, "管理主管A", "Jack");
+            var user2 = SimpleFactory.CreateEmployee(2, "員工01", "Nick");
+            Console.WriteLine($"打卡資料: 編號-{user1.Id}, 職稱-{user1.Title}, 姓名-{user1.Name}");
+            Console.WriteLine($"打卡資料: 編號-{user2.Id}, 職稱-{user2.Title}, 姓名-{user2.Name}");
         }
 
     }

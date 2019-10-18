@@ -47,6 +47,8 @@
     <Compile Include="Adapter\ThirdPartyLogger.cs" />
     <Compile Include="Composite\CompositeLogger.cs" />
     <Compile Include="Decorator\DecoratedLogger.cs" />
+    <Compile Include="Factory\SimpleFactory.cs" />
+    <Compile Include="Factory\User.cs" />
     <Compile Include="NullObject\ConsoleLogger.cs" />
     <Compile Include="NullObject\ILogger.cs" />
     <Compile Include="NullObject\MainApp.cs" />
