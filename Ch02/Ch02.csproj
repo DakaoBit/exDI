@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\CommonLogger.cs" />
+    <Compile Include="Adapter\ThirdPartyLogger.cs" />
     <Compile Include="Composite\CompositeLogger.cs" />
     <Compile Include="Decorator\DecoratedLogger.cs" />
     <Compile Include="NullObject\ConsoleLogger.cs" />
@@ -55,6 +57,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
