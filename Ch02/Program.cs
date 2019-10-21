@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using Ch02.Factory_SimpleFactory;
 using Ch02.Factory_FactoryMethod;
 using Ch02.Factory_AbstractFactory;
+using Ch02.AmbientContext.ex01;
+using Ch02.AmbientContext.ex02;
 
 namespace Ch02
 {
@@ -69,19 +71,26 @@ namespace Ch02
             2.增加新的工廠和產品族容易，增加新的產品等級結構麻煩(開閉原則的傾斜性)。*/
             #endregion
 
-            AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
-            Shape shape1 = shapeFactory.getShape("Circle");
-            shape1.draw();
+            //AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
+            //Shape shape1 = shapeFactory.getShape("Circle");
+            //shape1.draw();
 
-            Shape shape2 = shapeFactory.getShape("Square");
-            shape2.draw();
+            //Shape shape2 = shapeFactory.getShape("Square");
+            //shape2.draw();
 
-            AbstractFactory coloFactory = FactoryProducer.getFactory("COLOR");
-            Color color1 = coloFactory.getColor("Red");
-            color1.fill();
+            //AbstractFactory coloFactory = FactoryProducer.getFactory("COLOR");
+            //Color color1 = coloFactory.getColor("Red");
+            //color1.fill();
 
-            Color color2 = coloFactory.getColor("White");
-            color2.fill();
+            //Color color2 = coloFactory.getColor("White");
+            //color2.fill();
+
+            //Ambient Context - example 1
+            //AppShared.Logger.Log("使用 Ambient Context Pattern ");
+
+            //Ambient Context - example 2
+            Console.WriteLine("<<< Ambient Context 範例 >>>");
+            TestContext.Run();
         }
 
     }

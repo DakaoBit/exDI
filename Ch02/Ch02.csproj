@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Adapter\CommonLogger.cs" />
     <Compile Include="Adapter\ThirdPartyLogger.cs" />
+    <Compile Include="AmbientContext\ex01\AppShared.cs" />
+    <Compile Include="AmbientContext\ex01\ILogger.cs" />
+    <Compile Include="AmbientContext\ex01\Logger.cs" />
+    <Compile Include="AmbientContext\ex02\PerThreadContext.cs" />
+    <Compile Include="AmbientContext\ex02\TestContext.cs" />
     <Compile Include="Composite\CompositeLogger.cs" />
     <Compile Include="Decorator\DecoratedLogger.cs" />
     <Compile Include="Factory_AbstractFactory\AbstractFactory.cs" />
