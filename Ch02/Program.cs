@@ -55,14 +55,9 @@ namespace Ch02
             //var msg2 = laStore.orderPizza(new Ch02.Factory_FactoryMethod.Pizza("LAStore", "cheese", 2));
             //Console.WriteLine(msg2);
 
+
+
             //Factory Pattern - AbstractFactory
-            AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
-            Shape shape1 = shapeFactory.getShape("Circle");
-            shape1.draw();
-
-            Shape shape2 = shapeFactory.getShape("Square");
-            shape2.draw();
-
             #region 抽象工廠模式
             /*
             優點：
@@ -73,6 +68,13 @@ namespace Ch02
             1.在產品族中擴充功能新的產品是很困難的，它需要修改抽象工廠的介面。
             2.增加新的工廠和產品族容易，增加新的產品等級結構麻煩(開閉原則的傾斜性)。*/
             #endregion
+
+            AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
+            Shape shape1 = shapeFactory.getShape("Circle");
+            shape1.draw();
+
+            Shape shape2 = shapeFactory.getShape("Square");
+            shape2.draw();
 
             AbstractFactory coloFactory = FactoryProducer.getFactory("COLOR");
             Color color1 = coloFactory.getColor("Red");
