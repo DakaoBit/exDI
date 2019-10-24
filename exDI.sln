@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch03.MyDIContainerV1", "Ch0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch03.MyDIContainerV2", "Ch03.MyDIContainerV2\Ch03.MyDIContainerV2.csproj", "{0ED2E629-5FF4-420A-90EE-F21313578DD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch03.TestObjectLifeTime", "Ch03.TestObjectLifeTime\Ch03.TestObjectLifeTime.csproj", "{11BF11E9-4464-42F3-A08A-98FA890E8562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch03.UnityInterception", "Ch03.UnityInterception\Ch03.UnityInterception.csproj", "{3DBCB3F4-37A4-4728-8D4A-F0F2820EA537}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{0ED2E629-5FF4-420A-90EE-F21313578DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ED2E629-5FF4-420A-90EE-F21313578DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ED2E629-5FF4-420A-90EE-F21313578DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BF11E9-4464-42F3-A08A-98FA890E8562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BF11E9-4464-42F3-A08A-98FA890E8562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BF11E9-4464-42F3-A08A-98FA890E8562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BF11E9-4464-42F3-A08A-98FA890E8562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DBCB3F4-37A4-4728-8D4A-F0F2820EA537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBCB3F4-37A4-4728-8D4A-F0F2820EA537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBCB3F4-37A4-4728-8D4A-F0F2820EA537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBCB3F4-37A4-4728-8D4A-F0F2820EA537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
