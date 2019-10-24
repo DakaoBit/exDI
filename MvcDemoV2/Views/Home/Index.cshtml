@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Domain.Customers>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+ 
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(o => o.CustomerID)</th>  
+        <th>@Html.DisplayNameFor(o => o.ContactName)</th>
+        <th>@Html.DisplayNameFor(o => o.CompanyName)</th>
+        <th>@Html.DisplayNameFor(o => o.Country)</th>
+        <th>@Html.DisplayNameFor(o => o.City)</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(i => item.CustomerID)
+            </td>
+            <td>@Html.DisplayFor(i => item.ContactName)</td>
+            <td>@Html.DisplayFor(i => item.CompanyName)</td>
+            <td>@Html.DisplayFor(i => item.Country)</td>
+            <td>@Html.DisplayFor(i => item.City)</td>
+           
+        </tr>
+      
+    }
+</table>
